@@ -7,7 +7,7 @@ import { vidoeArray } from "../data/videoData";
 import Switch from "react-switch";
 
 export default function VideoPage() {
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
 
   const handleToggleChange = (checked) => {
     setToggle(checked);
@@ -47,7 +47,7 @@ export default function VideoPage() {
       <div>
         <label style={{ textAlign: "center" }}>
           <span>
-            <h4>Do you wana see comments</h4>
+            <h4>Do you wana hide comments</h4>
           </span>
           <Switch onChange={handleToggleChange} checked={toggle} />
         </label>
